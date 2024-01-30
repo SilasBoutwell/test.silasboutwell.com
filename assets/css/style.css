@@ -70,6 +70,18 @@ h6 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio #portfolio-flters li::before, .portfolio #portfolio-flters li::after {
+    margin: 4px 0px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio #portfolio-flters li, .portfolio #portfolio-flters li::before, .portfolio #portfolio-flters li::after {
+    font-size: 12px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
