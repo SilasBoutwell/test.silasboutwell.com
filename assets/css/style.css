@@ -6,10 +6,11 @@ body {
 a {
   color: #cf9645;
   text-decoration: none;
+  transition: all .15s ease-in-out;
 }
 
 a:hover {
-  color: #f6ba66;
+  color: #ad721f;
   text-decoration: none;
 }
 
@@ -21,6 +22,8 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -62,21 +65,15 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .portfolio #portfolio-flters li::before, .portfolio #portfolio-flters li::after {
     margin: 4px 0px !important;
   }
-}
 
-@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
   .portfolio #portfolio-flters li, .portfolio #portfolio-flters li::before, .portfolio #portfolio-flters li::after {
     font-size: 12px !important;
   }
@@ -649,6 +646,11 @@ section {
   .features .nav-link i {
     font-size: 24px;
   }
+}
+
+#features .fa-star, .fa-star-half-stroke {
+  color: gold;
+  font-size: 100px;
 }
 
 .features .tab-content {
@@ -1536,6 +1538,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  margin-top: 8rem;
 }
 
 #footer .footer-top .footer-info {
@@ -1546,6 +1549,10 @@ section {
   border-top: 4px solid #000000;
   text-align: center;
   padding: 30px 20px;
+}
+
+#footer a:hover {
+  color: #f6ba66;
 }
 
 #footer .footer-top .footer-info p {
