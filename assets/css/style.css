@@ -653,6 +653,23 @@ section {
   font-size: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  #features .fa-star, .fa-star-half-stroke {
+    font-size: 50px;
+  }
+}
+
+#features #silas-img {
+  height: 400px !important; 
+  opacity: .85 !important;
+}
+
+@media screen and (max-width: 768px) {
+  #features #silas-img {
+    height: 200px !important;
+  }
+}
+
 .features .tab-content {
   margin-top: 30px;
 }
