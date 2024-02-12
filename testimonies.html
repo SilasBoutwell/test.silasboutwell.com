@@ -36,12 +36,18 @@
     padding: 0px!important; background-color: transparent!important;
   } .sib-form-block__button {margin-bottom: 20px!important;} .sib-form .input {color: black!important;} .sib-form-block__button {background-color: transparent!important; border: 2px solid #be8432!important; transition: all .2s ease-in-out} .sib-form-block__button:hover {background-color: #be8432!important;} #sib-container input:-ms-input-placeholder {    text-align: left;    font-family: "Helvetica", sans-serif;    color: #c0ccda;  }  #sib-container input::placeholder {    text-align: left;    font-family: "Helvetica", sans-serif;    color: #c0ccda;  }  #sib-container textarea::placeholder {    text-align: left;    font-family: "Helvetica", sans-serif;    color: #c0ccda;  }</style><link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"><!--  END - We recommend to place the above code in head tag of your website html -->
   
+  <style>
+    #hero .carousel-container {
+        height: 40vh;
+    }
+  </style>
+
   </head>
   
   <body>
   
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
   
         <div class="logo">
@@ -52,12 +58,12 @@
   
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
             <li class="dropdown"><a href="#"><span>Testimonies</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="#">Featured Testimonies</a></li>
-                <li><a href="#">All Testimonies</a></li>              
-                <li class="dropdown"><a href="#"><span>Categorized</span> <i class="bi bi-chevron-right"></i></a>
+                <li><a href="#all-testimonies">All Testimonies</a></li>              
+                <li class="dropdown"><a href="#all-testimonies"><span>Categorized</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
                     <li><a href="#">Addictions</a></li>
                     <li><a href="#">Struggles</a></li>
@@ -77,64 +83,170 @@
       </div>
     </header><!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
-      <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+    <main id="main" class="no-hero-main">
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="all-testimonies" class="portfolio testimonials">
+        <div class="container">
   
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Not <span>Ashamed</span></h2>
-            <p class="animate__animated fanimate__adeInUp">Romans 1:16 is a powerful verse that reminds us of the importance of sharing the gospel of Christ with others. As believers, we should not be ashamed of the message of salvation, but rather, we should boldly proclaim it to the world around us. And that is exactly what we do here at Testimonies.</p><p class="d-none d-lg-block">At Testimonies, we are passionate about sharing our stories with others. Our goal is to inspire and encourage those who may be going through tough times, and to offer hope and healing through the love of Jesus Christ. By sharing our experiences and how God has worked in our lives, we hope to show others that they are not alone in their struggles.
-            </p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <div class="section-title" data-aos="zoom-out">
+            <h2>Testimonies</h2>
+            <p>All Testimonies</p>
           </div>
-        </div>
+        
+          <ul id="portfolio-flters" class="d-flex justify-content-end links" data-aos="fade-up">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-salvation">Salvation</li>
+            <li data-filter=".filter-addictions">Addictions</li>
+            <li data-filter=".filter-struggles">Struggles</li>
+          </ul>
+
+          <ul id="portfolio-flters" class="d-flex justify-content-end links " data-aos="fade-up">
+            <li data-filter=".filter-teenage">Teenage</li>
+            <li data-filter=".filter-anger">Anger</li>
+            <li data-filter=".filter-abuse">Abuse</li>
+          </ul>
   
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Share Your Story</h2>
-            <p class="animate__animated animate__fadeInUp">At Testimonies, we offer a platform for people to share their stories of how God has helped them overcome. If you have a testimony to share, send us an email, and our team will work with you to create a well-written story. After you finish, we'll publish it on our website for others to read. For more information, visit our contact page.</p>
-            <a href="#contact" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <div class="row portfolio-container" data-aos="fade-up">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-salvation filter-addictions">
+              <div class="testimonial-item">          
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">          
+                <h3>Saul Goodman</h3>          
+                <br>
+                <p>          
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.          
+                </p>
+                <a href="#" class="btn-read-more">Read More</a>
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-struggles filter-abuse filter-teenage">
+              <div class="testimonial-item">          
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">          
+                <h3>Sara Wilsson</h3>          
+                <br>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit
+                  fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.          
+                </p>
+                <a href="#" class="btn-read-more">Read More</a>
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-addictions filter-anger filter-salvation">
+              <div class="testimonial-item">          
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">          
+                <h3>Jena Karlis</h3>  
+                <br>        
+                <p>          
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem
+                  eram duis noster aute amet eram fore quis sint minim.          
+                </p>    
+                <a href="#" class="btn-read-more">Read More</a>      
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-struggles filter-salvation">
+              <div class="testimonial-item">          
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">          
+                <h3>Matt Brandon</h3>   
+                <br>       
+                <p>          
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim
+                  duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.          
+                </p> 
+                <a href="#" class="btn-read-more">Read More</a>         
+                <br><br>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-struggles filter-anger filter-teenage filter-salvation">
+                <div class="testimonial-item">          
+                  <img src="https://placehold.co/400" class="testimonial-img" alt="">          
+                  <h3>The 400x400 dude</h3>   
+                  <br>       
+                  <p>          
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim
+                    duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.          
+                  </p> 
+                  <a href="#" class="btn-read-more">Read More</a>         
+                  <br><br>
+                </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-struggles filter-anger filter-salvation">
+              <div class="testimonial-item">          
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">          
+                <h3>John Larson</h3>      
+                <br>    
+                <p>          
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis
+                  sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.          
+                </p>          
+                <a href="#" class="btn-read-more">Read More</a>
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-addictions filter-anger filter-salvation">
+              <div class="testimonial-item">          
+                <img src="assets/img/team/pastor.jpg" class="testimonial-img" alt="">          
+                <h3>Cookie Monster</h3>    
+                <br>      
+                <p>          
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis
+                  sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.          
+                </p>
+                <a href="#" class="btn-read-more">Read More</a>          
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-addictions filter-abuse filter-struggles">
+              <div class="testimonial-item">          
+                <img src="assets/img/portfolio/portfolio-1.jpg" class="testimonial-img" alt="">          
+                <h3>Bob the Builder</h3>   
+                <br>       
+                <p>          
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis
+                  sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.          
+                </p>
+                <a href="#" class="btn-read-more">Read More</a>          
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-struggles filter-abuse filter-salvation">
+              <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-salvation">
+              <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+  
           </div>
+  
         </div>
-  
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">TESTIMONIES.US</h2>
-            <p class="animate__animated animate__fadeInUp">Testimonies is a place where people can share their struggles, or stories of how they were given a new life in Christ. This website aims to provide a space for individuals to relate, read real-life experiences, and grow in their relationship with the Lord. Furthermore, it is a platform for those who do not know God in a real and personal way, but desire to learn more about Him.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-          </div>
-        </div>
-  
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-        </a>
-  
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-        </a>
-  
-      </div>
-  
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-        </g>
-      </svg>
-  
-    </section><!-- End Hero -->
+      </section><!-- End Portfolio Section -->
+
+    </main>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
