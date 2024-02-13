@@ -66,6 +66,14 @@ h6 {
   opacity: 1;
 }
 
+/* Disables the Back to Top Button on mobile devices */
+
+@media (max-width: 768px) {
+  .back-to-top.active {
+    visibility: hidden;
+  }
+}
+
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -1385,6 +1393,23 @@ section {
   background: #cf9645;
 }
 
+@media (max-width: 768px) {
+  .team .member .social {
+    opacity: 1;
+    bottom: 15px;
+    align-self: flex-end;
+  }
+
+  .team .member .social a:hover {
+    background: #cf9645;
+  }
+
+  .team .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+}
+
 .team .member .social i {
   font-size: 18px;
   line-height: 0;
@@ -1419,6 +1444,8 @@ section {
   opacity: 1;
   bottom: 15px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Contact
