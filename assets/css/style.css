@@ -953,7 +953,7 @@ section {
   .portfolio .portfolio-item .portfolio-info .preview-link,
   .portfolio .portfolio-item .portfolio-info .details-link {
     font-size: 12px;
-    top: calc(50% - 16px);
+    top: calc(50% - 18px);
   }
 }
 
