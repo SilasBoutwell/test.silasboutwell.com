@@ -13,8 +13,8 @@
     <!-- ======= UPDATE FAVICON BEFORE LAUNCHING ======= -->
     
     <!-- Favicons -->
-    <link href="assets/Images/FaviconTransparentDark.png" rel="icon">
-    <link href="assets/Images/FaviconTransparentDark.png" rel="apple-touch-icon">
+    <link href="assets/img/FaviconTransparentDark.png" rel="icon">
+    <link href="assets/img/FaviconTransparentDark.png" rel="apple-touch-icon">
   
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -58,24 +58,30 @@
   
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-            <li class="dropdown"><a href="#"><span>Testimonies</span> <i class="bi bi-chevron-down"></i></a>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li class="dropdown"><a href="testimonies.html"><span>Testimonies</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="testimonies.html">All Testimonies</a></li>
+                <li><a href="index.html #featured-testimonies">Featured Testimonies</a></li>   
+              </ul>
+            </li>
+            <!-- <li class="dropdown"><a href="#"><span>Testimonies</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="#">Featured Testimonies</a></li>
                 <li><a href="#all-testimonies">All Testimonies</a></li>              
                 <li class="dropdown"><a href="#all-testimonies"><span>Categorized</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Addictions</a></li>
-                    <li><a href="#">Struggles</a></li>
-                    <li><a href="#">Salvation</a></li>
-                    <li><a href="#">Teenage</a></li>
+                  <ul id="portfolio-filters">
+                    <li><a href="testimonies.html" data-filter=".filter-addictions">Addictions</a></li>
+                    <li><a href="testimonies.html" data-filter=".filter-struggles">Struggles</a></li>
+                    <li><a href="testimonies.html" data-filter=".filter-salvation">Salvation</a></li>
+                    <li><a href="testimonies.html" data-filter=".filter-teenage">Teenage</a></li>
                   </ul>
                 </li>
               </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+            </li> -->
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
             <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="nav-link scrollto" href="index.html #contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -83,7 +89,22 @@
       </div>
     </header><!-- End Header -->
 
-    <main id="main" class="no-hero-main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>All Testimonies</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Testimonies</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <main>
 
       <!-- ======= Portfolio Section ======= -->
       <section id="all-testimonies" class="portfolio testimonials">
@@ -193,6 +214,34 @@
                 <br><br>
               </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-salvation filter-teenage">
+              <div class="testimonial-item">          
+                <img src="assets/img/team/silas.jpg" class="testimonial-img" alt="">          
+                <h3>Silas Boutwell</h3>          
+                <br>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit
+                  fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.          
+                </p>
+                <a href="testimonies/silasboutwell.html" class="btn-read-more">Read More</a>
+                <br><br>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-salvation filter-addictions filter-struggles">
+              <div class="testimonial-item">          
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">          
+                <h3>Jerry Williams</h3>          
+                <br>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit
+                  fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.          
+                </p>
+                <a href="testimonies/jerrywilliams.html" class="btn-read-more">Read More</a>
+                <br><br>
+              </div>
+            </div>
   
             <div class="col-lg-4 col-md-6 portfolio-item filter-addictions filter-anger filter-salvation">
               <div class="testimonial-item">          
@@ -255,39 +304,39 @@
   
             <div class="col-lg-4 col-md-6">
               <div class="footer-info">
-                <img src="./assets/Images/FaviconTransparentDark.png" alt="" class="img-fluid">
+                <img src="./assets/img/FaviconTransparentDark.png" alt="" class="img-fluid">
                 <h3> Testimonies</h3>
                 <p class="pb-3"><em>For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. <br><strong>Romans 1:16</strong></em></p>
-                <div class="social-links mt-3">
+                <!-- <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                   <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                   <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                   <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
   
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Page Links</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#new-testimonies">New Testimonies</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#products">Products</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html #featured-testimonies">Featured Testimonies</a></li>
+                <!-- <li><i class="bx bx-chevron-right"></i> <a href="#products">Products</a></li> -->
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html #contact">Contact</a></li>
               </ul>
             </div>
   
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Other Links</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Contribute</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Newsletter</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Find a local Church</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Submit a testimony</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Get Saved</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">All testimonies</a></li>
+                <!-- <li><i class="bx bx-chevron-right"></i> <a href="#cta">Contribute</a></li> -->
+                <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Newsletter</a></li> -->
+                <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Find a local Church</a></li> -->
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html #contact">Submit a testimony</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html #features">Get Saved</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="testimonies.html">All testimonies</a></li>
               </ul>
             </div>
   

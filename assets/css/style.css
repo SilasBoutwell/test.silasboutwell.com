@@ -23,14 +23,23 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.no-hero-main {
-  margin-top: 80px;
-}
-
 @media (max-width: 786px) {
   .no-hero-main {
     margin-top: 50px !important;
   }
+}
+
+/* #cf9645 */
+
+.input#FIRSTNAME::placeholder, .input#LASTNAME::placeholder, .input#EMAIL::placeholder  {
+  color: #7a8590;
+  border: none;
+}
+
+.input#FIRSTNAME:focus, .input#LASTNAME:focus, .input#EMAIL:focus {
+  outline: none !important;
+  border-color: #ad721f;
+  box-shadow: 0 0 10px #ad721f; 
 }
 
 /*--------------------------------------------------------------
@@ -985,6 +994,26 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
+}
+
+.portfolio-description img {
+  border-radius: 15px; 
+  height: 300px;
+}
+
+.portfolio-description {
+  margin-top: -20px;
+}
+
+.portfolio-info h3 img {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .portfolio-info img {
+    height: 60px;
+    margin-left: 20px;
+  }
 }
 
 /*--------------------------------------------------------------

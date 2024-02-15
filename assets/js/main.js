@@ -182,8 +182,7 @@
         });
       }, true);
     }
-
-  });
+  })  
 
   /**
    * Initiate portfolio lightbox 
