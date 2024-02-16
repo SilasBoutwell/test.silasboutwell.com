@@ -986,6 +986,13 @@ section {
   transition: 0.3s;
 }
 
+@media (max-width: 768px) {
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 1;
+  }
+} 
+
+
 .portfolio .portfolio-item .portfolio-links a:hover {
   color: #f6ba66;
 }
