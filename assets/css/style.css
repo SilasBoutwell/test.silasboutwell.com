@@ -922,7 +922,7 @@ section {
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
-  right: 40px;
+  right: 15px;
   font-size: 16px;
   align-items: center;
   top: calc(50% - 20px);
@@ -939,10 +939,6 @@ section {
   border: 2px solid #f6ba66;
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 30px;
-}
-
 @media (max-width: 768px) {
   .portfolio .portfolio-item .portfolio-info h4 {
     font-size: 14px;
@@ -951,9 +947,32 @@ section {
   .portfolio .portfolio-item .portfolio-info p {
     font-size: 12px;
   }
+
+  .portfolio .portfolio-item .portfolio-info .preview-link,
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    padding: 4px 14px;
+    top: calc(50% - 18px);
+  }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 770px) and (max-width: 1024px) {
+  .portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 12px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info p {
+    font-size: 10px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info .preview-link,
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    font-size: 10px;
+    padding: 4px 14px;
+    top: calc(50% - 14px);
+  }
+}
+
+@media (max-width: 370px) {
   .portfolio .portfolio-item .portfolio-info h4 {
     font-size: 12px;
   }
