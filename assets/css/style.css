@@ -229,7 +229,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 15px 7px 15px;
+  padding: 7px 18px 7px 18px;
   margin-left: 5px;
   font-size: 14px;
   color: #fff;
@@ -1122,6 +1122,13 @@ section {
   .portfolio-info img {
     height: 60px;
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .portfolio-info img {
+    height: 40px;
+    margin-left: 10px;
   }
 }
 
