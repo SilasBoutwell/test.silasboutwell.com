@@ -112,7 +112,7 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Florence Dvorak<img src="../assets/img/testimonies/florencedvorak.jpg" class="img-fluid d-sm-inline d-lg-none" alt=""></h3>
+              <h3 id="testimonyName">Florence Dvorak<img src="../assets/img/testimonies/florencedvorak.jpg" class="img-fluid d-sm-inline d-lg-none" alt=""></h3>
               <ul>
                 <li><strong>Category</strong>: Salvation</li>
                 <li><strong>Published</strong>: February 23, 2024</li>
@@ -141,6 +141,17 @@
               <p class="text-center">
                 God is good! Throughout all these years He has been my refuge, my strength, my very present help (Plasm 46:1). What a privilege it is to be a child of God, to know He loves me unconditionally, perfectly, completely! Thank You Jesus for ALL You've done! Thank You Jesus for victories won! <br> -Florence
               </p>
+
+              <!-- cts (call to salvation) section -->
+              <div class="cts-container">
+                <h4 class="text-center cts">
+                  Does any part of <span id="displayTestimonyName"></span> testimony relate to your life?<br>See how <em><strong>one</strong></em> decision can make all the difference!
+                </h4>
+                <div class="cts-btn-container text-center">
+                  <a href="/articles/how-to-get-to-heaven" class="cts-btn">Click Here</a>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -224,6 +235,19 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    var testimonyName = document.getElementById("testimonyName").innerText;
+    const fullName = testimonyName.split(" ");
+    let name = fullName[0];
+    var displayName = document.getElementById("displayTestimonyName");
+
+    if (name.startsWith("Pastor") == true) {
+      displayName.innerText = testimonyName + "'s";
+    } else {
+      displayName.innerText = name + "'s";
+    }
+  </script>
 
 </body>
 

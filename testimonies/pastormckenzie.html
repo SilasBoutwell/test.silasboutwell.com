@@ -112,7 +112,7 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Pastor McKenzie<img src="../assets/img/testimonies/marvinmckenzie.jpg" class="img-fluid d-sm-inline d-lg-none" alt=""></h3>
+              <h3 id="testimonyName">Pastor McKenzie<img src="../assets/img/testimonies/marvinmckenzie.jpg" class="img-fluid d-sm-inline d-lg-none" alt=""></h3>
               <ul>
                 <li><strong>Category</strong>: Salvation</li>
                 <li><strong>Published</strong>: February 22, 2024</li>
@@ -138,6 +138,17 @@
               <p class="text-center">
                 Mike discipled me before work and during breaks. With his encouragement, I resolved to be “all in” for Christ. I couldn't see a good reason to claim to be a child of God and live otherwise.
               </p>
+
+              <!-- cts (call to salvation) section -->
+              <div class="cts-container">
+                <h4 class="text-center cts">
+                  Does any part of <span id="displayTestimonyName"></span> testimony relate to your life?<br>See how <em><strong>one</strong></em> decision can make all the difference!
+                </h4>
+                <div class="cts-btn-container text-center">
+                  <a href="/articles/how-to-get-to-heaven" class="cts-btn">Click Here</a>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -221,6 +232,19 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    var testimonyName = document.getElementById("testimonyName").innerText;
+    const fullName = testimonyName.split(" ");
+    let name = fullName[0];
+    var displayName = document.getElementById("displayTestimonyName");
+
+    if (name.startsWith("Pastor") == true) {
+      displayName.innerText = testimonyName + "'s";
+    } else {
+      displayName.innerText = name + "'s";
+    }
+  </script>
 
 </body>
 
