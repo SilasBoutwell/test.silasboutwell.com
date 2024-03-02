@@ -849,9 +849,23 @@ section {
   height: 100%;
 }
 
+.services a {
+  color: black;
+}
+
+.services a p {
+  color: #444444;
+}
+
 .services .icon-box:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+
+@media (max-width: 1024Px) {
+  .services .icon-box:hover {
+    transform: none;
+  }
 }
 
 .services .icon {
